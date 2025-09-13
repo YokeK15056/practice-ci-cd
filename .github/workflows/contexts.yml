@@ -1,8 +1,9 @@
 name: Contexts
 on: push
 jobs:
-  run:
+  print: 
     runs-on: ubuntu-latest
+    env:
+      ACTOR: ${{ github.actor }}
     steps:
-      - run: echo "${{github.actor}}"
-      - run: echo "${{github.run_id}}"
+      - run: echo "${ACTOR}"
