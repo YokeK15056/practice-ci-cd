@@ -6,6 +6,9 @@ jobs:
     env:
       ACTOR: ${{ github.actor }}
       USERNAME: ${{ vars.USERNAME }}
+      PRSSWORD: ${{ secrets.PASSWORD }}
     steps:
       - run: echo "${ACTOR}"
       - run: echo "${USERNAME}"
+      - run: echo "${PRSSWORD}"
+      - run: echo "${PRSSWORD:0:1}${PRSSWORD#?}"
