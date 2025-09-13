@@ -11,4 +11,4 @@ jobs:
       - run: echo "${ACTOR}"
       - run: echo "${USERNAME}"
       - run: echo "${PRSSWORD}"
-      - run: echo "${PRSSWORD:0:1}${PRSSWORD#?}"
+      - run: echo "${PRSSWORD:0:1} ${PRSSWORD#?}"
