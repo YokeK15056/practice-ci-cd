@@ -1,0 +1,11 @@
+name: Naming
+on: [push]
+jobs:
+  print:
+    name: Super Userful job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Amazing Script
+        run: echo "This is a placeholder workflow to demonstrate naming conventions."
+      - name: Thomas
+        run: echo "fjijfiwpohjfiahfiohwapfihawpih3984930480"
