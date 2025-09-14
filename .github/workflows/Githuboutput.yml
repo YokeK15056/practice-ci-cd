@@ -1,8 +1,11 @@
-name: GITHUB_OUTPUT
+name: GITHUB_OP
 on: [push]
 jobs:
   share:
     runs-on: ubuntu-latest
     steps:
-      - run: export MY_OUTPUT="HelloWorld"
-      - run: echo "${MY_OUTPUT}"
+      - id: source
+        run: echo "result=Hello" >> "${GITHUB_OUTPUT}"
+      - env:
+          RESULT: ${{ steps.source.outputs.result }}
+        run: echo "${RESULT}"
