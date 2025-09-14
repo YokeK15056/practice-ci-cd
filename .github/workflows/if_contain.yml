@@ -1,5 +1,5 @@
 name: Condictions
-on: [push]
+on: [workflow_dispatch]
 jobs:
   skip_or_run:
     runs-on: ubuntu-latest
