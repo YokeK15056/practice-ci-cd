@@ -1,0 +1,8 @@
+name: Condictions
+on: [push]
+jobs:
+  skip_or_run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job runs because the condition was met."
+        if: contains(github.run_id, '1')
