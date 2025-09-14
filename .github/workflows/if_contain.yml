@@ -4,5 +4,8 @@ jobs:
   skip_or_run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This job runs because the condition was met."
+      - run: echo "This job runs because the condition was met1."
         if: contains(github.run_id, '1')
+    steps:
+      - run: echo "This job runs because the condition was met2."
+        if: contains(github.run_id, 'トーマスｊふぁｊｈふぃわひふぁひおうぁ')
