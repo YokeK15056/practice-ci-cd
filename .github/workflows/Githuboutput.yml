@@ -4,5 +4,5 @@ jobs:
   share:
     runs-on: ubuntu-latest
     steps:
-      -run: export MY_OUTPUT="HelloWorld"
-      -run: echo "${MY_OUTPUT}"
+      - run: export MY_OUTPUT="HelloWorld"
+      - run: echo "${MY_OUTPUT}"
