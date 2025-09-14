@@ -1,0 +1,8 @@
+name: GITHUB_OUTPUT
+on: [push]
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      -run : export MY_OUTPUT="HelloWorld"
+      -run : echo "${MY_OUTPUT}"
