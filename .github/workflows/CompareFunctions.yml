@@ -1,0 +1,13 @@
+name: Compare functions
+on: push
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compare functions
+        run: 
+        env:
+          CONTAINS_FUNC: ${{ contains('hello world', 'world') }}
+          STARTS_WITH_FUNC: ${{ startsWith('hello world', 'hello') }}
+          ENDS_WITH_FUNC: ${{ endsWith('hello world', 'world') }}
+          CONTAINS_ARRAY: ${{ contains(github.event.issue.label.*.name,'bug') }}
