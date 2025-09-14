@@ -1,6 +1,6 @@
 name: Naming
 run-name: Run by @${{github.actor}}
-on: [push]
+on: [workflow_dispatch]
 jobs:
   print:
     name: Super Userful job
