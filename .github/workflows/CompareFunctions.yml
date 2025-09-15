@@ -5,7 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Compare functions
-        run: 
+        run: |
+          echo "CONTAINS_FUNC=$CONTAINS_FUNC"
+          echo "STARTS_WITH_FUNC=$STARTS_WITH_FUNC"
+          echo "ENDS_WITH_FUNC=$ENDS_WITH_FUNC"
+          echo "CONTAINS_ARRAY=$CONTAINS_ARRAY"
         env:
           CONTAINS_FUNC: ${{ contains('hello world', 'world') }}
           STARTS_WITH_FUNC: ${{ startsWith('hello world', 'hello') }}
