@@ -4,4 +4,4 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      - echo "::debug::This is a debug message"
+      - run: echo "::debug::This is a debug message"
