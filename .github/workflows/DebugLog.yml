@@ -4,4 +4,9 @@ jobs:
   log:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "::debug::This is a debug message"
+      - run: |
+          echo "::group::Show emvirionment variables"
+          printenv
+          echo "::endgroup::"
+      - run: |
+          echo "::debug::Debug"
