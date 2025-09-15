@@ -15,3 +15,5 @@ jobs:
           STARTS_WITH_FUNC: ${{ startsWith('hello world', 'hello') }}
           ENDS_WITH_FUNC: ${{ endsWith('hello world', 'world') }}
           CONTAINS_ARRAY: ${{ contains(github.event.issue.label.*.name,'bug') }}
+
+          
