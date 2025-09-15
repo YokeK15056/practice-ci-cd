@@ -1,2 +1,8 @@
 name: Invalid
 on: push
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello,World"
+      - uses: actions/checkout@v4

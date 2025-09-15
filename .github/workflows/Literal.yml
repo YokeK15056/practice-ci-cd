@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: printenv | grep 'LITERAL_'
         env:
-          LITERAL_NULL: ${{ null }}
+          LITERAL_NULL: null
           LITERAL_NUMBER: ${{ 12345 }}
           LITERAL_BOOLEAN: ${{ true }}
           LITERAL_STRING: ${{ 'Hello' }}

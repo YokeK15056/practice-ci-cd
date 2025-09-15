@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Compare functions
-        run: 
+        run:
         env:
           CONTAINS_FUNC: ${{ contains('hello world', 'world') }}
           STARTS_WITH_FUNC: ${{ startsWith('hello world', 'hello') }}
