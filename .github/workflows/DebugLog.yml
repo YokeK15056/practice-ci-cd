@@ -10,3 +10,9 @@ jobs:
           echo "::endgroup::"
       - run: |
           echo "::debug::Debug"
+      - run: |
+          echo "::error::This is an error message"
+      - run: |
+          echo "::warning::This is an warning message"
+      - run: |
+          echo "::notice::This is an notice message"
