@@ -1,0 +1,15 @@
+name: Paralell jobs
+on: [push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job 1"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job 2"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job 3"
