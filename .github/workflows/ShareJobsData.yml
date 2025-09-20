@@ -14,4 +14,4 @@ jobs:
     steps:
       - env:
           RESULT: ${{ needs.job1.outputs.result }}
-      - run: echo "Data from job 1 ${RESULT}"
+        run: echo "Data from job 1 ${RESULT}"
