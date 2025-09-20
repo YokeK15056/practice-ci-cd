@@ -7,7 +7,7 @@ inputs:
     default: 'true'
     required: false
     description: コンテキストをログ出力するか
-ouputs:
+outputs:
   dumped-date:
     value: ${{ steps.dump.outputs.dumped-date }}
     description: dump日時
