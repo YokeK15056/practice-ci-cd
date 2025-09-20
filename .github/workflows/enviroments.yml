@@ -1,11 +1,12 @@
 name: Environments
-on: [workflow_dispatch]
-  inputs:
-    environments-name:
-      type: environment
-      default: test
-      required: true
-      discription: 'Select an environment'
+on:
+  workflow_dispatch:
+    inputs:
+      environments-name:
+        type: environment
+        default: test
+        required: true
+        discription: 'Select an environment'
 
 jobs:
   print:
