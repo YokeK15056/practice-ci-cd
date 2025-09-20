@@ -1,4 +1,4 @@
-name: Dump
+name: dump
 description: |
   環境変数とgithubコンテキストをログに出力します。
   デバッグ用です。
