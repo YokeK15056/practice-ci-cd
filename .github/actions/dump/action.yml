@@ -9,7 +9,7 @@ inputs:
     description: コンテキストをログ出力するか
 outputs:
   dumped-date:
-    value: ${{ steps.dump.outputs.dumped-date }}
+    value: ${{ steps.cuurrent.outputs.date }}
     description: dump日時
 runs:
   using: 'composite'
