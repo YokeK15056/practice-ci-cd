@@ -13,3 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job 3"
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job 4"
